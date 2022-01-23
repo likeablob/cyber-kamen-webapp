@@ -27,7 +27,7 @@ const DOT_COLORS = [
 })
 export default class Matrix extends VuexModule {
   dots: RawDots = [...new Array(64).keys()].map((v) => ({ ind: v, on: false }))
-  isBoxDot = false
+  isBoxDot = true
   savedDots: SavedDots[] = defaultGallery
   dotColor: string | null = DOT_COLORS[0]
   defaultDotColor = DOT_COLORS[0]

@@ -10,10 +10,7 @@
       :height="56"
     >
       <v-toolbar-title>
-        <v-btn
-          class="font-weight-black green--text"
-          text
-          @click="matrixStore.cycleDotColor"
+        <v-btn class="font-weight-black" text @click="matrixStore.cycleDotColor"
           >Cyber kamen</v-btn
         >
       </v-toolbar-title>

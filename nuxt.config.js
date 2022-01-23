@@ -1,6 +1,16 @@
 import colors from 'vuetify/es5/util/colors'
 
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: `/${process.env.npm_package_name}/`,
+        },
+      }
+    : {}
+
 export default {
+  ...routerBase,
   // mode: 'spa',
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,

@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES npm run build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
